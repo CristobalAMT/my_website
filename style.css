@@ -58,6 +58,11 @@ li {
     padding: 0px 15px;
 }
 
+.project-card a {
+    font-size: 24px;
+    color: black;
+}
+
 .project-card p {
     font-style: italic;
 }
@@ -75,12 +80,17 @@ li {
     flex: 1 1 calc(45% - 20px);
     border: 3px solid rgb(58, 58, 58);
     border-radius: 5px;
-    padding: 0px 15px;
+    padding: 30px 15px;
     text-align: center;
 }
 
-.important-project-card h1 {
+.important-project-card h1 { /*to be removed*/
     font-size: 40px;
+}
+
+.important-project-card a {
+    font-size: 40px;
+    color: black;
 }
 
 .important-project-card p {
