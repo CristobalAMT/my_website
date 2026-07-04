@@ -1,0 +1,63 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: dodgerblue;
+}
+
+ul {
+    font-family: helvetica;
+}
+li {
+  list-style: circle;
+}
+
+.hero-gallery {
+    display: flex;              /* Arrange items in a row */
+    flex-wrap: wrap;            /* Allow wrapping to next line */
+    gap: 15px;                  /* Space between images */
+    justify-content: center;    /* Center images horizontally */
+    padding: 10px;
+}
+
+.hero-portrait {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+}
+
+/* image classes */
+.hero-gallery img {
+    width: 100px;               /* Fixed width */
+    height: auto;               /* Keep aspect ratio */
+    border-radius: 10px;         /* Rounded corners */
+    object-fit: cover;          /* Crop if needed */
+    box-shadow: 3px 3px 9px rgba(0,0,0,0.4);
+    background-color: rgb(17, 41, 121);
+    transition: transform 0.3s ease;
+}
+
+.hero-gallery img:hover {
+    transform: scale(1.3);
+}
+
+.hero-gallery img.won {
+    transform: scale(0.8);
+    filter: grayscale(100%);
+    background-color: rgb(94, 95, 97);
+}
+
+.hero-gallery img.won:hover {
+    transform: scale(1.1);
+}
+
+/* button classes */
+
+.hero-gallery button {
+    border-color: rgb(167, 167, 167);
+    background-color: rgba(10, 112, 214, 0.658);
+    transition: transform 0.2s ease;
+}
+
+.hero-gallery button:hover {
+    transform: scale(1.05);
+}
